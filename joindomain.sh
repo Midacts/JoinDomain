@@ -303,6 +303,15 @@ root	ALL=(ALL:ALL) ALL
 EOH
 		echo
 		echo -e '\e[01;37;42mYou have successfully edited the /etc/sudoers file!\e[0m'
+
+	# Restarts the winbind service
+		echo
+		echo -e '\e[01;34m+++ Restarting the Samba service...\e[0m'
+		echo
+		service winbind restart
+		echo
+		echo -e '\e[01;37;42mThe Samba service has been successfully restarted!\e[0m'
+		echo
 }
 function doAll()
 {
