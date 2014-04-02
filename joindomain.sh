@@ -196,7 +196,7 @@ function joinDomain()
 {
 	# Joins the machine to the Active Directory domain
 		echo
-		echo -e '\e[33;01mPlease type in the name of the user you would like to use to joi your domain:\e[0m'
+		echo -e '\e[33;01mPlease type in the name of the user you would like to use to join your domain:\e[0m'
 		read user
 		echo -e '\e[33;01mPlease type in that user'\''s password:\e[0m'
 		read passwd
