@@ -306,70 +306,70 @@ EOH
 }
 function doAll()
 {
-	#Calls Function 'installKerberos'
+	# Calls Function 'installKerberos'
 		echo -e "\e[33m=== Install Kerberos ? (y/n)\e[0m"
 		read yesno
 		if [ "$yesno" = "y" ]; then
 				installKerberos
 		fi
 
-	#Calls Function 'configureKerberos'
+	# Calls Function 'configureKerberos'
 		echo -e "\e[33m=== Configure the Kerberos configuration file ? (y/n)\e[0m"
 		read yesno
 		if [ "$yesno" = "y" ]; then
 				configureKerberos
 		fi
 
-	#Calls Function 'installSamba'
+	# Calls Function 'installSamba'
 		echo -e "\e[33m=== Install Samba ? (y/n)\e[0m"
 		read yesno
 		if [ "$yesno" = "y" ]; then
 				installSamba
 		fi
 
-	#Calls Function 'configureSamba'
+	# Calls Function 'configureSamba'
 		echo -e "\e[33m=== Configure the Samba configuration file ? (y/n)\e[0m"
 		read yesno
 		if [ "$yesno" = "y" ]; then
 				configureSamba
 		fi
 
-	#Calls Function 'installWinbind'
+	# Calls Function 'installWinbind'
 		echo -e "\e[33m=== Install Winbind ? (y/n)\e[0m"
 		read yesno
 		if [ "$yesno" = "y" ]; then
 				installWinbind
 		fi
 
-	#Calls Function 'configureWinbind'
+	# Calls Function 'configureWinbind'
 		echo -e "\e[33m=== Configure the nsswitch configuration file ? (y/n)\e[0m"
 		read yesno
 		if [ "$yesno" = "y" ]; then
 				configureWinbind
 		fi
 
-	#Calls Function 'joinDomain'
+	# Calls Function 'joinDomain'
 		echo -e "\e[33m=== Join the Active Directory domain ? (y/n)\e[0m"
 		read yesno
 		if [ "$yesno" = "y" ]; then
 				joinDomain
 		fi
 
-	#Calls Function 'pam'
+	# Calls Function 'pam'
 		echo -e "\e[33m=== Configure PAM's configuration files ? (y/n)\e[0m"
 		read yesno
 		if [ "$yesno" = "y" ]; then
 				pam
 		fi
 
-	#Calls Function 'sudo'
+	# Calls Function 'sudo'
 		echo -e "\e[33m=== Configure the sudo configuration files ? (y/n)\e[0m"
 		read yesno
 		if [ "$yesno" = "y" ]; then
 				sudo
 		fi
 		
-	#End of Script Congratulations, Farewell and Additional Information
+	# End of Script Congratulations, Farewell and Additional Information
 		clear
 		FARE=$(cat << 'EOZ'
 
