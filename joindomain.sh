@@ -368,6 +368,7 @@ function doAll()
 		if [ "$yesno" = "y" ]; then
 				sudo
 		fi
+		
 	#End of Script Congratulations, Farewell and Additional Information
 		clear
 		FARE=$(cat << 'EOZ'
